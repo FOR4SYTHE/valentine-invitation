@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>For You</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Beth+Ellen&family=Finger+Paint&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+</head>
+<body>
+
+    <div id="intro-overlay" class="intro-overlay">
+        <div class="envelope-full-screen" id="envelope-btn">
+            
+            <div class="env-bg"></div>
+            
+            <div class="env-flap" id="env-flap">
+                <div class="flap-paper"></div>
+            </div>
+            
+            <div class="seal-container">
+                <img src="./assets/rose-stamp.webp" class="seal-img intact" alt="Seal">
+                <div class="seal-split-wrapper">
+                    <div class="seal-part left"></div>
+                    <div class="seal-part right"></div>
+                </div>
+            </div>
+
+            <p class="intro-hint">tap or click to break seal</p>
+        </div>
+    </div>
+
+    <div id="pattern-container"></div>
+    <div class="bg-vignette"></div>
+    <div class="noise-overlay"></div>
+    <div id="petals-container"></div>
+    
+    <div id="flood-overlay"></div>
+    <div id="heart-flood-container"></div>
+
+    <main class="stage">
+        <div id="screen-question" class="screen active">
+            <div class="card-wrapper" id="scene">
+                <div class="card-composite">
+                    <img src="./assets/card-base.webp" class="layer base" alt="Card Base">
+                    <img src="./assets/card-cake.webp" class="layer cake" alt="Cake">
+                    <img src="./assets/card-text.webp" class="layer text" alt="Text">
+                </div>
+            </div>
+
+            <div class="controls">
+                <button id="btn-yes" class="btn btn-primary">YES</button>
+                <button id="btn-no" class="btn btn-secondary">
+                    <div class="sock-container">
+                        <div class="stink-aura"></div>
+                        <img src="./assets/Nocks.webp" class="sock-icon" alt="No">
+                    </div>
+                </button>
+            </div>
+        </div>
+
+        <div id="screen-success" class="screen">
+            <div class="success-content">
+                <img src="./assets/pinned.webp" class="pinned-image" alt="Us">
+                <h1 class="celebration-text">With you, each and every day is<br> 
+                    <span class="valentines-text">VALENTINES DAY <span class="beating-heart">❤️</span></span>
+                </h1>
+            </div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
